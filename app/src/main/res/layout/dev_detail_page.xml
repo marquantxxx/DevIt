@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/bg"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dev_detail_page"
+        android:layout_width="@dimen/detail_page_width"
+        android:layout_height="@dimen/detail_page_height"
+        card_view:cardCornerRadius="@dimen/card_view_corner_radius">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="@dimen/dev_detail_layout_padding">
+
+            <ImageView
+                android:layout_width="@dimen/dev_detail_page_image_view"
+                android:id="@+id/avatar"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/dev_detail_page_image_view_margin"
+                android:layout_height="@dimen/dev_detail_page_image_view"
+                />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/avatar"
+                android:textSize="@dimen/dev_detail_page_text_size"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/git_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username"
+                android:textSize="@dimen/dev_detail_page_text_size_link"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/git_link"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="90dp"
+                android:onClick="shareInfo"
+                android:id="@+id/btn_click"
+                android:text="@string/share"/>
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

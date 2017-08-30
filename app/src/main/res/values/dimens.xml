@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dev_home_page_padding">06dp</dimen>
+    <dimen name="dev_home_page_image_margin_left">10dp</dimen>
+    <dimen name="dev_home_page_image_margin_start">03dp</dimen>
+    <dimen name="dev_home_page_image_view">55dp</dimen>
+    <dimen name="dev_home_page_text_view_padding_left">05dp</dimen>
+    <dimen name="dev_home_page_text_view_padding_top">08dp</dimen>
+    <dimen name="dev_home_page_text_view_margin_left">25dp</dimen>
+    <dimen name="detail_page_width">250dp</dimen>
+    <dimen name="dev_detail_page">45dp</dimen>
+    <dimen name="dev_detail_page_text_size">20sp</dimen>
+    <dimen name="dev_detail_page_text_size_link">18sp</dimen>
+    <dimen name="dev_detail_page_image_view_margin">20dp</dimen>
+    <dimen name="dev_detail_page_image_view">150dp</dimen>
+    <dimen name="dev_detail_layout_padding">16dp</dimen>
+    <dimen name="detail_page_height">400dp</dimen>
+    <dimen name="card_view_corner_radius">15dp</dimen>
+</resources>

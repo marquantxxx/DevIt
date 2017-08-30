@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardUseCompatPadding="true"
+        android:focusable="true"
+        android:id="@+id/card_view"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dev_home_page_padding">
+
+            <ImageView
+                android:id="@+id/image_home_page"
+                android:layout_width="@dimen/dev_home_page_image_view"
+                android:layout_height="@dimen/dev_home_page_image_view"
+                android:layout_marginLeft="@dimen/dev_home_page_image_margin_left"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:scaleType="fitXY"
+                android:layout_marginStart="@dimen/dev_home_page_image_margin_start" />
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:gravity="center_vertical"
+                android:text="@string/username"
+                android:textSize="@dimen/dev_detail_page_text_size_link"
+                android:layout_toRightOf="@id/image_home_page"
+                android:paddingLeft="@dimen/dev_home_page_text_view_padding_left"
+                android:paddingTop="@dimen/dev_home_page_text_view_padding_top"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="@dimen/dev_home_page_text_view_margin_left"
+                android:layout_marginRight="@dimen/dev_detail_layout_padding"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
